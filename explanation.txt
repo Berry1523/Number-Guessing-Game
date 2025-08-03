@@ -1,0 +1,11 @@
+Random Seed Initialization: The line srand(static_cast<unsigned int>(time(0))); initializes the random number generator with the current time, ensuring different random numbers on each run.
+
+User Input for Range: The program prompts the user to enter a minimum and maximum number, validating that the minimum is less than the maximum.
+
+Random Number Generation: The random number is generated using the formula rand() % (max - min + 1) + min, which ensures the number falls within the specified range.
+
+Guessing Logic: The user is allowed a specified number of attempts to guess the number. Feedback is provided after each guess, indicating whether the guess was too low, too high, or correct.
+
+Score Tracking: If the user guesses the number correctly, the program checks if the current attempt count is less than the best score and updates it accordingly.
+
+Replay Option: After each game, the user is asked if they want to play again, allowing for continuous engagement.
